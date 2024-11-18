@@ -1,0 +1,324 @@
+/*----------------
+    RESET
+------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------
+    COMMONS
+------------------*/
+.img-fluid {
+    max-width: 100%;
+}
+
+/*----------------
+    LAYOUT
+------------------*/
+.main-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+/*----------------
+    TYPOGRAPHY
+------------------*/
+body {
+    font-family: "Montserrat", serif;
+    background-color: #f6f5f3;
+}
+
+h1{
+    font-family: "Nerko One", cursive;
+    font-size: 45px;
+}
+
+h2{
+    color:#4e3969 ;
+}
+
+h3{
+    color: #999999;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+
+/*----------------
+    BUTTONS
+------------------*/
+
+.btn{
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    box-shadow: 8px 8px 16px #e8e8e8;
+}
+
+/*----------------
+    HEADER
+------------------*/
+header{
+    background-color: #fff;
+    text-align: center;
+    padding: 14px;
+    color: #ff9614;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+/*----------------
+    MAIN
+------------------*/
+main{
+    padding: 26px;
+}
+
+
+.recipe-header h2{
+    margin: 12px 0;
+}
+
+.recipe-header h2 > span{
+    display: none;
+}
+
+.recipe-header .col-video,
+.recipe-header .details-column{
+    width: 100%;
+}
+
+.col-video img{
+    width: 100%;
+    display: block;
+}
+
+.details-column{
+    background-color: #fff;
+    padding: 35px 25px;
+    box-shadow: 7px 7px 15px #e8e8e8;
+}
+
+.details-header{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.recipe-header ul{
+    list-style: none;
+    display: block;
+} 
+
+li{
+    padding: 9px 0;
+    margin-right: 25px;
+}
+
+.social{
+    margin: 20px 0;
+}
+
+.social span{
+    display: none;
+}
+
+.social .row{
+    max-width: 100%;
+    justify-content: space-around;
+}
+
+.fa-facebook{
+    color: #1a77f3;
+}
+
+.fa-twitter{
+    color: #009eff;
+}
+
+.fa-instagram{
+    color: #de3d78;
+}
+
+.fa-pinterest{
+    color: #e62222;
+}
+
+.fa-youtube{
+    color: #e62222;
+}
+
+/* ad */
+
+.ad-banner{
+    display: none;
+}
+
+/* presetation */
+
+.recipe-presentation h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.recipe-image{
+    width: 300px;
+    margin: auto;
+    float: none;
+    display: block;
+    box-shadow: 7px 7px 15px #e0dfdd;
+}
+
+.recipe-presentation p{
+    line-height: 2;
+}
+
+
+
+/*----------------
+    FOOTER
+------------------*/
+
+footer{
+    background-color: #7c69a4; 
+    color: #fff;
+    padding: 26px;
+}
+
+.agency-name{
+    text-align: center;
+    margin: 9px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.link a{
+    color: #fff;
+}
+
+.sreet-address{
+    text-align: center;
+}
+
+.links-list{
+    display: flex;
+    justify-content: center;
+}
+
+.links-list ul{
+    width: 70%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+ 
+/* ------------------------
+         SCALABLE
+--------------------------*/
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    header{
+        text-align: left;
+    }
+
+    .recipe-header h2 span{
+        display: inline;
+    }
+
+    .recipe-header ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+    } 
+
+    .social .row .btn{
+        width: calc(100% / 5);
+    }
+
+    .social .row{
+        flex-wrap: nowrap;
+        gap:25px;
+    }
+
+
+    .ad-banner{
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .recipe-presentation .content img{
+        float: left;
+        margin: 8px;
+    }
+
+}
+
+@media  screen and (min-width: 992px) {
+    .recipe-header .row{
+        flex-wrap: nowrap;
+    }
+
+    .recipe-header .col-video{
+        width: 65%;
+    }
+
+    .recipe-header .details-column{
+        width: 35%;
+    }
+
+    .recipe-header .ul-top, .recipe-header .ul-bottom{
+        display: inline-block;
+    }
+
+    .details-column li{
+        display: block;
+    }
+
+    .social .row .btn span{
+        display: inline;
+        font-weight: 600;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .agency-name{
+        text-align: left;
+    }
+
+    .sreet-address{
+        text-align: left;
+    }
+
+    .links-list ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 15px;
+        align-items: center;
+    }
+}
